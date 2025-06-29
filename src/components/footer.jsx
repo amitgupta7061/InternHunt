@@ -1,5 +1,6 @@
 import { Briefcase, Github, Twitter, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -20,16 +21,16 @@ export function Footer() {
             </p>
             <div className="flex space-x-2">
               <Button variant="outline" size="icon">
-                <Github className="h-4 w-4" />
+                <Link href='https://github.com/amitgupta7061'><Github className="h-4 w-4" /></Link>
               </Button>
               <Button variant="outline" size="icon">
-                <Twitter className="h-4 w-4" />
+                <Link href="https://x.com/home?lang=en"><Twitter className="h-4 w-4" /></Link>
               </Button>
               <Button variant="outline" size="icon">
-                <Linkedin className="h-4 w-4" />
+                <Link href="https://www.linkedin.com/feed/"><Linkedin className="h-4 w-4" /></Link>
               </Button>
               <Button variant="outline" size="icon">
-                <Mail className="h-4 w-4" />
+                <Link href="mailto:amittgupta.dev@gmail.com"><Mail className="h-4 w-4" /></Link>
               </Button>
             </div>
           </div>

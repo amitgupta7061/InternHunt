@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Menu, X, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
+import Link from 'next/link';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ export function Header() {
         <div className="flex items-center space-x-4">
           <ThemeToggle />
           <Button className="hidden sm:inline-flex">
-            Get Started
+            <Link href="\dashboard">Get Started</Link>
           </Button>
           <Button
             variant="ghost"
