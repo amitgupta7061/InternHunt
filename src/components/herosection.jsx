@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 
 export function HeroSection() {
   return (
-    <section className="relative pt-20 pb-16 overflow-hidden">
+    <section className="relative pt-20 pb-16 lg:px-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-blue-50 to-green-50 dark:from-purple-950/20 dark:via-blue-950/20 dark:to-green-950/20" />
       <div className="relative container px-4">
         <div className="mx-auto max-w-4xl text-center">
