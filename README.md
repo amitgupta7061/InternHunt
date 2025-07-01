@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Job Aggregator & Scraper Web App – InternHunt
 
-## Getting Started
+A full-stack job aggregation platform that automatically scrapes and displays the latest internship/job listings from trusted platforms like **Internshala**. It filters results to show only jobs posted in the last 24 hours and removes outdated listings after 2 days — keeping the feed fresh, clean, and duplicate-free.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Tech Stack
+
+### 💻 Frontend
+- **Next.js** – React framework for fast rendering and routing  
+- **Tailwind CSS** – Utility-first CSS for styling  
+- **ShadCN UI** – Accessible and modern UI components  
+- **Dark/Light Theme** – Using `next-themes`
+
+### ⚙️ Backend
+- **Node.js + Express.js** – API server with job scraping logic  
+- **Cheerio + Axios** – For parsing and scraping job data  
+- **MongoDB** – Stores job listings with TTL indexing for auto-expiry
+
+---
+
+## ✨ Features
+
+- 🔄 **Live Scraping**: Grabs fresh jobs from platforms like Internshala  
+- ⏱️ **Fresh Feed**: Shows only jobs posted in the last 24 hours  
+- 🧹 **Auto Cleanup**: Jobs auto-delete after 2 days using MongoDB TTL  
+- 🚫 **No Duplicates**: Smart filtering based on job links  
+- 🌙 **Modern UI**: Responsive frontend with theme toggle and clean design
+
+---
+
+## ⚙️ Getting Started
+
+### 🔹 Frontend Setup
+
+1. **Clone this repo**  
+   ```bash
+   git clone https://github.com/amitgupta7061/InternHunt.git
+   cd InternHunt
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Create .env.local
+
+ini
+Copy
+Edit
+NEXT_PUBLIC_BACKEND_URL=http://localhost:4000
+Start development server
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Runs at: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔹 Backend Setup
+📦 Repo: InternHunt-backend
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clone the backend:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+bash
+Copy
+Edit
+git clone https://github.com/amitgupta7061/InternHunt-backend.git
+cd InternHunt-backend
+Install dependencies:
 
-## Learn More
+bash
+Copy
+Edit
+npm install
+Add .env file:
 
-To learn more about Next.js, take a look at the following resources:
+ini
+Copy
+Edit
+MONGODB_URL=your_mongo_connection_string
+PORT=4000
+Start server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+bash
+Copy
+Edit
+npm run dev
+Runs at: http://localhost:4000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📸 Preview
+Add screenshots here once the UI is polished!
 
-## Deploy on Vercel
+📄 License
+MIT License. Free to use and extend.
+## 🛠 Skills
+React, HTML, Tailwind
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Screenshots
+![InternHunt Preview](https://raw.githubusercontent.com/amitgupta7061/InternHunt/main/public/preview_1.png)
+
+![InternHunt Preview](https://raw.githubusercontent.com/amitgupta7061/InternHunt/main/public/preview_2.png)
